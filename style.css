@@ -1,0 +1,1846 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color: transparent;
+   user-select: none;
+}
+
+@font-face {
+   font-family: vazirl;
+   src: url(./fonts/Vazir-Light.ttf);
+}
+
+@font-face {
+   font-family: vazirm;
+   src: url(./fonts/Vazir-Medium.ttf);
+}
+
+@font-face {
+   font-family: vazirb;
+   src: url(./fonts/Vazir-Bold.ttf);
+}
+
+
+.big-mom {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   gap: 40px;
+   background-color: rgb(133, 0, 145);
+
+   & .container {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirl;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container2 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container3 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container4 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container5 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container6 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container7 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container8 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container9 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container10 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container11 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container12 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container13 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container14 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container15 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container16 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container17 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container18 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container19 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container20 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container21 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container22 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container23 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container24 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .container25 {
+      height: fit-content;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(88, 88, 88);
+      flex-wrap: wrap;
+      gap: 30px;
+      user-select: none;
+   
+      & h1 {
+         font: 30px vazirb;
+         color: white;
+      }
+   
+      & p {
+         width: 90%;
+         text-align: center;
+         font: 30px vazirm;
+         color: white;
+         
+         @media (655px < width < 960px) {
+            font: 20px vazirm;
+         }
+         
+         @media (300px < width <= 655px) {
+            font: 15px vazirm;
+         }
+      }
+   
+      & .cards {
+         width: 100%;
+         height: fit-content;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 20px;
+   
+         @media (300px < width < 1160px) {
+            flex-direction: column;
+            gap: 10px;
+         }
+   
+         & .card {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgba(185, 185, 185, 0.2);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font: 12px vazirl;
+   
+            &:hover {
+               background-color: rgba(185, 185, 185, 0.3);
+            }
+         }
+      }
+   }
+
+   & .score-container {
+      z-index: 2;
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      & .score {
+         color: white;
+         font: 50px vazirl;
+      }
+
+      & .title {
+         color: white;
+         font: 20px vazirl;
+      }
+   }
+
+   & .btn-container {
+      width: 90%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 2;
+
+      & .page {
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         border: none;
+         color: white;
+         border: 1px solid rgb(255, 255, 255);
+         background-color: rgba(255, 255, 255, 0);
+         font: 15px vazirm;
+         outline: none;
+         user-select: none;
+      }
+
+      & .p1 {
+         background-color: white;
+         color: black;
+      }
+   }
+
+   & .see-final {
+      display: none;
+      padding: 10px 30px;
+      color: black;
+      border-radius: 10px;
+      background-color: white;
+      font: 20px vazirm;
+      z-index: 4;
+   }
+}
+
+.cover {
+   position: fixed;
+   display: none;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.holder {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: purple;
+   color: white;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   font: 20px vazirl;
+
+   & .msg {
+      font: 30px vazirb;
+   }
+
+   & .warning {
+      font: 18px vazirl;
+      text-align: center;
+      width: 80%;
+   }
+}
+
+.start {
+   padding: 10px 30px;
+   background-color: white;
+   color: purple;
+   font: 17px vazirm;
+   text-decoration: none;
+   border-radius: 10px;
+   scale: 1;
+   animation: zoom 1s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+   to {
+      color: white;
+   }
+}
+
+.final {
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   position: absolute;
+   top: 0;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+   flex-direction: column;
+
+   & .text {
+      font: 30px vazirl;
+      color: rgb(83, 83, 83);
+   }
+
+   & .final-score {
+      color: purple;
+      font: 100px vazirb;
+   }
+
+   & .stat-holder {
+      display: flex;
+      gap: 10px;
+      align-items: end;
+
+      & .true-title {
+         font: 15px vazirm;
+         color: rgb(150, 150, 150);
+      }
+
+      & .true-number {
+         font: 15px vazirm;
+         color: green;
+      }
+
+      & .false-title {
+         font: 15px vazirm;
+         color: rgb(150, 150, 150);
+      }
+
+      & .false-number {
+         font: 15px vazirm;
+         color: red;
+      }
+   }
+}  
+
+& .next {
+   padding: 5px 20px;
+   border: none;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.301);
+   color: rgb(87, 87, 87);
+   z-index: 2;
+   font: 15px vazirb;
+}
+
+.loader-back {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+   flex-direction: column;
+   gap: 60px;
+}
+
+.loading {
+   font: 20px vazirl;
+   color: rgb(104, 104, 104);
+}
+
+.loader {
+   height: 40px;
+   aspect-ratio: .866;
+   display: grid;
+   background: conic-gradient(from -121deg at right,#0000, #cfa2ec 1deg 60deg,#0000 61deg);
+   animation: l12 2s infinite linear;
+   transform-origin: 33% 50%;
+ }
+ .loader:before,
+ .loader:after {
+   content: "";
+   grid-area: 1/1;
+   background: conic-gradient(from -121deg at right,#0000, #9716ec 1deg 60deg,#0000 61deg);
+   transform-origin: inherit;
+   animation: inherit;
+ }
+ .loader:after {
+   background: conic-gradient(from -121deg at right,#0000, #6500a8 1deg 60deg,#0000 61deg);
+   animation-duration: 3s;
+ }
+ @keyframes l12{
+   100% {transform: rotate(1turn)}
+ }
